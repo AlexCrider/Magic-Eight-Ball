@@ -1,0 +1,50 @@
+// Get username
+let userName = 'Alex';
+
+// Greet user with or without username
+userName ? console.log(`Hello, ${userName}!\n`) : console.log('Hello!\n');
+
+// Ask user questions
+let userQuestion = 'Will I get the Software Engineer position?\n';
+
+// Print user question
+console.log(`${userName} has asked: ${userQuestion}`);
+
+// Number variable
+let randomNumber = Math.floor(Math.random() * 8);
+
+// Eight ball answers
+let eightBall = '';
+
+switch (randomNumber) {
+  case 0:
+    eightBall = 'It is certain';
+    break;
+  case 1:
+    eightBall = 'It is decidedly so';
+    break;
+  case 2:
+    eightBall = 'Reply hazy. Try again.';
+    break;
+  case 3:
+    eightBall = 'Cannot predict now';
+    break;
+  case 4:
+    eightBall = 'Do not count on it';
+    break;
+  case 5:
+    eightBall = 'My sources say no';
+    break;
+  case 6:
+    eightBall = 'Outlook not so good';
+    break;
+  case 7:
+    eightBall = 'Signs point to yes';
+    break;
+  default:
+    eightBall = 'Unknown';
+    break;
+}
+
+// Print answer
+console.log(`Magic 8 Ball says: ${eightBall}`);
